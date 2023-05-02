@@ -19,8 +19,9 @@ const rooter = createBrowserRouter(
         element={<Home />}
         loader={async () => {
           const { data } = await axios.get(
-            `https://charontom.github.io/Kasa/data/data.json`
+            `https://jsonplaceholder.typicode.com/posts`
           )
+          console.log(data)
 
           if (data === undefined || data === null) {
             throw new Response('not found', { status: 404 })

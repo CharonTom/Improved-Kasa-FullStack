@@ -5,7 +5,7 @@ import home from '../../assets/home.png'
 import { Link } from 'react-router-dom'
 
 function Home() {
-  const { data } = useLoaderData()
+  // const { data } = useLoaderData()
   return (
     <section className="miseenpage">
       <Banner
@@ -14,7 +14,7 @@ function Home() {
         page={'acceuil'}
       />
       <div className="grid">
-        {data.map((appartment) => (
+        {/* {data.map((appartment) => (
           <Link
             key={appartment.id}
             className="link-card"
@@ -22,7 +22,7 @@ function Home() {
           >
             <Cards image={appartment.cover} title={appartment.title} />
           </Link>
-        ))}
+        ))} */}
       </div>
     </section>
   )
