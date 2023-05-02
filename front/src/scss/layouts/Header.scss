@@ -1,0 +1,32 @@
+.nav {
+  margin: 40px 100px 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    margin: 20px 20px 0px 20px;
+  }
+
+  &__img {
+    height: 62px;
+    @media (max-width: 768px) {
+      height: 43px;
+    }
+  }
+
+  &__link a {
+    @include link;
+    padding-left: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding-left: 20px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

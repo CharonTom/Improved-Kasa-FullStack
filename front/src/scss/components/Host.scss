@@ -1,0 +1,23 @@
+.host {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &__name {
+    width: min-content;
+    font-size: 18px;
+    text-align: end;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  &__portrait {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    @media (max-width: 768px) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

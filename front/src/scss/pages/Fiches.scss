@@ -1,0 +1,46 @@
+.section_undercarrousel {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  & h1 {
+    margin-top: 8px;
+    font-size: 36px;
+    padding-right: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  & p {
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__hostAndRate {
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+}
+
+.section_collapse_fiche {
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1px;
+  }
+}

@@ -1,0 +1,23 @@
+.section_tag {
+  display: flex;
+  gap: 10px;
+
+  .tag {
+    @include flexcenter;
+    border-radius: 10px;
+    background-color: $primary-color;
+    font-size: 14px;
+    height: 25px;
+    padding: 2px 20px 2px 20px;
+    @media (max-width: 768px) {
+      font-size: 10px;
+      height: 18px;
+      padding: 2px 15px 2px 15px;
+      border-radius: 5px;
+    }
+
+    & span {
+      color: white;
+    }
+  }
+}

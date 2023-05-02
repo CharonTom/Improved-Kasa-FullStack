@@ -1,0 +1,39 @@
+.error {
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__big {
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 60px;
+    @media (max-width: 768px) {
+      font-size: 96px;
+      margin-top: 150px;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 15px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-top: 0px;
+      padding: 0 40px 0 40px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: $primary-color;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin: 120px 0 200px 0;
+    }
+  }
+}

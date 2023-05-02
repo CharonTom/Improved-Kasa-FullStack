@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  background: black;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  //margin-top: 35px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    & svg {
+      height: 31px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding-bottom: 0;
+    }
+  }
+}

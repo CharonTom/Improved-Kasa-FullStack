@@ -1,0 +1,57 @@
+.collapse {
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 100%;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    background-color: $primary-color;
+    height: 47px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 25px 0 20px;
+    font-size: 24px;
+    @media (max-width: 768px) {
+      font-size: 13px;
+      height: 30px;
+      padding: 0 10px 0 10px;
+    }
+
+    &__arrow {
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    &__arrow.true {
+      transform: rotate(-180deg);
+      transition: 0.5s;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    transition: height ease 0.3s;
+
+    &__son {
+      position: relative;
+      transform: translate(0px, -3px);
+      color: $primary-color;
+      background-color: $secondary-color;
+      border-radius: 0 0 10px 10px;
+      z-index: -1;
+      padding: 20px;
+
+      & p {
+        margin: 0px;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
