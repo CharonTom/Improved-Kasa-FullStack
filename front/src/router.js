@@ -15,11 +15,10 @@ const rooter = createBrowserRouter(
     <Route path="/" element={<Layouts />}>
       <Route
         index
-        path="/Kasa"
         element={<Home />}
         loader={async () => {
           const { data } = await axios.get(
-            `https://jsonplaceholder.typicode.com/posts`
+            `http://localhost:3000/api/stuff/appart`
           )
           console.log(data)
 
@@ -38,7 +37,7 @@ const rooter = createBrowserRouter(
             throw new Response('not found', { status: 404 })
           }
           const { data } = await axios.get(
-            `https://charontom.github.io/Kasa/data/data.json`
+            `http://localhost:3000/api/stuff/appart`
           )
 
           const appart = data.find((appart) => appart.id === id)
@@ -54,7 +53,7 @@ const rooter = createBrowserRouter(
         element={<Apropos />}
         loader={async () => {
           const { data } = await axios.get(
-            `https://charontom.github.io/Kasa/data/collapsedata.json`
+            `http://localhost:3000/api/stuff/collapse`
           )
 
           if (data === undefined || data === null) {

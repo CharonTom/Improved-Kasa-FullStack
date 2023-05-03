@@ -11,11 +11,11 @@ function Header() {
 
   return (
     <nav className="nav">
-      <Link to="/Kasa">
+      <Link to="/">
         <img src={Logo} alt="Logo" className="nav__img" />
       </Link>
       <div className="nav__link">
-        <NavLink style={navLinkStyles} to="/Kasa">
+        <NavLink style={navLinkStyles} to="/">
           Accueil
         </NavLink>
         <NavLink style={navLinkStyles} to="/about">
